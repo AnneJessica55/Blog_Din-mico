@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Inline+Display:wght@100;200;300;400;500;600;700;800;900&family=Big+Shoulders+Inline+Text:wght@100;200;300;400;500;600;700;800;900&family=Cabin+Sketch:wght@400;700&family=Knewave&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200;1,300;1,400;1,700&family=Righteous&display=swap');
+
+:root{
+ --font_h1: 'Cabin Sketch', arial;
+ --font_1h2: 'Shoulders Inline Display', arial;
+ --font_2h2: 'Shoulders Inline Text', arial;
+ --font_nav: 'Bebas Neue', arial;
+ --font_quotes: 'Montserrat', arial;
+ --font_text: 'Nunito', arial;
+ --font_footer: 'Nunito Sans', arial;
+ --cor000: #c9f5d9;
+ --cor00: #062011;
+ --cor1: #A9eed1;
+ --cor2: #9EDEC3;
+ --cor3: #5DE3AB;
+ --cor4: #79AB96;
+ --cor5:#275E47;
+ --cor01: #79ab96b9;
+ --cor02: #275e47ce;
+
+}
+
+* {
+    box-sizing: border-box;
+    transition: .2s;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('img/background05.jpg');
+    /*O background utiliado foi baixado do site https://www.pexels.com e pertence a Nick Collins*/
+    background-color: #a9eed1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+header{
+    display: flex;
+    background-color: var(--cor01);
+    width:100vw;
+    max-width: 1000px;
+    margin: auto;
+    padding:25px 0 25px 10px;
+}
+header>a>img{
+    width:50px;
+}
+header>h1{
+    font-family: var(--font_h1);
+    font-size: 45px;
+    color:var(--cor00);
+}
+header>h1>small{
+    font-size:20px;
+    display: block;
+    color:var(--cor00);
+}
+
+nav{
+    display: flex;
+    width:100vw;
+    max-width: 1000px;
+    background-color: var(--cor02);
+    margin: auto;
+    font-family: var(--font_nav);
+    justify-content: space-around;
+}
+nav>a{
+    text-decoration: none;
+    color: var(--cor000);
+    text-align: center;
+    letter-spacing: 1px;
+    width:100px;
+}
+nav>a:hover{
+    display: flex;
+    background-color: var(--cor000);
+    color:var(--cor02);
+    justify-content: center;
+}
+main{
+    background-color: var(--cor01);
+    width:100vw;
+    max-width: 1000px;
+    min-height:277px;
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    background-color: var(--cor02);
+    width:100vw;
+    max-width: 1000px;
+    margin:0 auto;
+    min-height: 200px;
+    font-family: var(--font_nav);
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--cor01);
+    padding:20px 0;
+    
+}
+footer>.footer-top{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    position:relative;
+}
+.arrow{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top:5px;
+    flex-direction: column;
+}
+.arrow>span{
+    display: block;
+    
+}
+footer>.footer-top>div{
+    display: flex;
+    justify-content: center;
+    
+}
